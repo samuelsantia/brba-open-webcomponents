@@ -1,0 +1,55 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../brba-open-wc.js';
+
+<Meta 
+  title="BrbaOpenWc"
+  parameters={{
+    component: "brba-open-wc",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# BrbaOpenWc
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add brba-open-wc
+```
+
+```js
+import 'brba-open-wc/brba-open-wc.js';
+```
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <brba-open-wc></brba-open-wc>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="brba-open-wc" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <brba-open-wc .title=${'Hello World'}></brba-open-wc>
+  `}
+</Story>
